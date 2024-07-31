@@ -6,16 +6,17 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:08:29 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/06/19 18:08:29 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:53:17 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_strlen(const char *str)
 {
     int i;
-
+	
+	i = 0;
     while (str[i] != '\0')
     {
         i++;

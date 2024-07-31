@@ -6,13 +6,13 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 13:05:40 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/06/14 13:08:56 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:50:05 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(int c)
 {
-	retrun(write(1, &c, 1));
+	return(write(1, &c, 1));
 }

@@ -6,11 +6,11 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:40:48 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/06/19 18:40:48 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:52:54 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int ft_ptrlen(uintptr_t num)
 {
@@ -37,13 +37,15 @@ void ft_putptrhex(uintptr_t num)
         if (num <= 9)
             ft_putchar_fd((num + '0'), 1);
         else
-            ft_putchar_fd((num - 10 + 'a', 1));
+            ft_putchar_fd((num - 10 + 'a'), 1);
     }
 }
 
 int ft_putptr(uintptr_t ptr)
 {
     int i;
+	
+	i = 0;
     if (ptr == 0)
     {
         ft_putstr("(nil)");

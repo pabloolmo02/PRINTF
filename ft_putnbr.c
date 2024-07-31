@@ -6,16 +6,17 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 13:20:14 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/06/19 18:55:58 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:48:59 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int nbr)
 {
 	unsigned int	i;
-
+	
+	i = 0;
 	if (nbr == -2147483648)
 	{
 		write(1, "-2147483648", 11);

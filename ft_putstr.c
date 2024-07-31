@@ -6,11 +6,11 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:08:18 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/07/16 17:20:35 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:38:54 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int ft_putstr(char *str)
 {
