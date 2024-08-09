@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 19:10:27 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/07/31 14:38:57 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/09 14:37:16 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ int	ft_putunsigned(unsigned int num)
 {
 	return (ft_putnbr(num));
 }
-

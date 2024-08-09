@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 13:08:47 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/07/31 14:49:41 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/09 14:27:38 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdint.h>
-
 
 int		ft_putchar(int c);
 void	ft_putchar_fd(char c, int fd);

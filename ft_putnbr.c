@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 13:20:14 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/07/31 14:48:59 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/09 14:30:41 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 int	ft_putnbr(int nbr)
 {
 	unsigned int	i;
-	
+
 	i = 0;
 	if (nbr == -2147483648)
 	{
 		write(1, "-2147483648", 11);
-		return(11);
+		return (11);
 	}
 	if (nbr < 0)
 	{
@@ -35,7 +35,7 @@ int	ft_putnbr(int nbr)
 	}
 	else
 	{
-    	i += ft_putchar(nbr + '0');
+		i += ft_putchar (nbr + '0');
 	}
 	return (i);
 }
