@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 20:13:56 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/08/09 14:29:27 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/10 18:58:38 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ int	ft_puthex(unsigned int nbr, char *base)
 	i = 0;
 	result = 0;
 	if (nbr == 0)
-		result += ft_putchar('0');
+	{
+		return (ft_putchar('0'));
+		result++;
+	}
 	while (nbr)
 	{
 		nbr_base[i] = nbr % 16;

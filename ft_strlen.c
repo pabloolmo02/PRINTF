@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 18:08:29 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/08/09 14:38:01 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/10 19:00:17 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_strlen(const char *str)
 	int	i;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (str[i] != '\0')
 	{
 		i++;

@@ -6,7 +6,7 @@
 /*   By: polmo-lo <polmo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 12:56:50 by polmo-lo          #+#    #+#             */
-/*   Updated: 2024/08/09 14:27:17 by polmo-lo         ###   ########.fr       */
+/*   Updated: 2024/08/09 16:24:38 by polmo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ static int	ft_converter(char format, va_list args)
 		return (ft_puthex(va_arg(args, unsigned int), "0123456789ABCDEF"));
 	else if (format == '%')
 		return (ft_putchar('%'));
-	return (1);
+	else
+		return (1);
+	return (0);
 }
 
 int	ft_printf(const char *format, ...)
@@ -44,7 +46,7 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	i = 0;
 	length = 0;
-	while (format)
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
